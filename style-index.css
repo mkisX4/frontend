@@ -1,7 +1,7 @@
 body {
     background: #FFFFFF;
     color: #000000;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Inter', sans-serif;
 }
 /* W3PRO.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
  html{
@@ -145,7 +145,7 @@ textarea{
 }
 /* End extract */
  html,body{
-    font-family:'Ubuntu',sans-serif;
+    font-family:'Inter',sans-serif;
     font-size:15px;
     line-height:1.5
 }
@@ -183,7 +183,7 @@ h6{
     font-family:monospace
 }
  h1,h2,h3,h4,h5,h6{
-    font-family:'Ubuntu',sans-serif;
+    font-family:'Inter',sans-serif;
     font-weight:400;
     margin:10px 0
 }

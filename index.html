@@ -6,7 +6,7 @@
 		<title>СУО ДГТУ</title>
 		<link rel="stylesheet" type="text/css" href="style-index.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+			@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 			.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
 			.w3-ios-light-grey{color:#000!important;background-color:#ceced2!important}
@@ -27,9 +27,9 @@
 				</div>
 				<div class="w3-container w3-margin-top w3-margin-bottom">
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу перевестись / восстановиться</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Мне надо подать документы </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Другое </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Хочу перевестись / восстановиться</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Мне надо подать документы </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Другое</b></button>
 				</div>
 			</div>
 			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
@@ -48,7 +48,8 @@
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor2')"><b>Хочу поступить на бакалавриат</b></button>
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить на магистратуру</b></button>
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить в колледж</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Другое </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review')"><b>Оценить</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Назад</b></button>
 				</div>
 			</div>
 			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
@@ -84,7 +85,7 @@
 			<footer class="e-container e-dark-grey e-center e-margin-top">
 		</div>
 		<!--review-->
-		<div id="Review" class="tab">
+		<div id="Review" class="tab" style="display:none">
 			<div class="userspace w3-center" style="height:85vh; position: relative;">
 				<div class="w3-container w3-animate-left" align=left>
 					<h1><b>Вы записаны!</b></h1>
