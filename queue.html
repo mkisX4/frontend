@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ ДГТУ</title>
+		<link rel="stylesheet" type="text/css" href="style-index.css">
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+			.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+			.w3-ios-light-grey{color:#000!important;background-color:#ceced2!important}
+		</style>
+	</head>
+	<body>
+		<div id="Queue" class="tab">
+			<div class="userspace w3-center" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-top" align=center>
+					<h4><b>Вы записаны!</b></h4>
+				</div>
+				<div class="w3-container w3-animate-top" align=center>
+					<h2><b>Ваш номер в очереди:</b></h2>
+				</div>
+				<div class="w3-container w3-animate-top" align=center>
+					<h1><b id="number"></b></h1>
+				</div>
+				 <div class="w3-row">
+                    <div class="w3-half w3-container w3-green">
+                      Кабинет: <br>
+                      <h2><b id="room"></b></h2>
+                    </div>
+                    <div class="w3-half w3-container">
+                      Время: <br>
+                      <h2><b id="time"> </b></h2>
+                    </div>
+                </div>
+				<img src = "ticketQR.png" alt="QR" width="400" height="400"/></p>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='index.html';"><b>Отменить запись</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='index.html';"><b>Оценить</b></button>
+				</div>
+			</div>
+			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
+				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+			</footer>
+			<footer class="e-container e-dark-grey e-center e-margin-top">
+		</div>
+		<!--    <div class="header" align=center>
+			<h1> <img src = "dstu.svg" alt="ДГТУ"/></p>
+			  Ваша заявка принята! </p>
+			  Вы приглашены в кабинет <b id="room"></b>.</p>
+			  Дата: <b id="date"> </b></p>
+			  Время: <b id="time"> </b></p>
+			  С собой иметь: <b id="docs"> </b></p>
+			</h1>
+			</div>-->
+		<script>
+			fetch("ticket.json")
+			    .then(response => response.json())
+			    .then(data => {
+			        for (var i = 0; i<data.items.length; i++){
+			            let vnumber = data.items[i].number;
+			            let vroom = data.items[i].room;
+			            let vtime = data.items[i].time;
+			            let vdate = data.items[i].date;
+			            let vdocs = data.items[i].docs;
+			                document.querySelector("#number").innerHTML += `${vnumber}`;
+			                document.querySelector("#room").innerHTML += `${vroom}`;
+			                document.querySelector("#time").innerHTML += `${vtime}`;
+			                document.querySelector("#date").innerHTML += `${vdate}`;
+			                document.querySelector("#docs").innerHTML += `${vdocs}`;
+			        }
+			    })
+		</script>
+	</body>
+</html>

@@ -7,20 +7,117 @@
 		<link rel="stylesheet" type="text/css" href="style-index.css">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+			.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+			.w3-ios-light-grey{color:#000!important;background-color:#ceced2!important}
 		</style>
 	</head>
 	<body>
-		<div class="header" align=center>
-			<h1> <img src = "dstu.svg" alt="My Happy SVG"/></p>
-			СИСТЕМА УПРАВЛЕНИЯ ОЧЕРЕДЬЮ ДГТУ </h1>
+		<!-- start	 -->
+		<div id="Start" class="tab">
+			<div class="userspace" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-left" align=left>
+					<h1><b>Добрый день!</b></h1>
+				</div>
+				<div class="w3-panel w3-ios-light-grey w3-margin">
+					<p><img src = "search.svg" alt="ДГТУ" width="20" height="20" style="margin-right: 10px;"/> Поиск по услугам...</p>
+				</div>
+				<div class="w3-container" align=left>
+					<h5>Выберите тип обращения, нажав на одну из кнопок ниже</h5>
+				</div>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу перевестись / восстановиться</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Мне надо подать документы </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Другое </b></button>
+				</div>
+			</div>
+			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
+				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+			</footer>
+			<footer class="e-container e-dark-grey e-center e-margin-top">
 		</div>
-		<div class="buttons">
-			<a href="ticketGoodbye.html"> <b>🥲 Поступление </b> </a>
-			<a href="ticketGoodbye.html"> <b>🤑 Оплата трудового семестра</b> </a>
-			<a href="ticketGoodbye.html"> <b>🤡 Отчисление </b> </a>
+		<!-- 	bachelor	 -->
+		<div id="Bachelor" class="tab" style="display:none">
+			<div class="userspace" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-left" align=left>
+					<h1><b>Поступление</b></h1>
+				</div>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor2')"><b>Хочу поступить на бакалавриат</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить на магистратуру</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить в колледж</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Другое </b></button>
+				</div>
+			</div>
+			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
+				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+			</footer>
+			<footer class="e-container e-dark-grey e-center e-margin-top">
 		</div>
+		<!-- 	bachelor2	 -->
+		<div id="Bachelor2" class="tab" style="display:none">
+			<div class="userspace" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-left" align=left>
+					<h1><b>Бакалавриат</b></h1>
+				</div>
+				<div class="w3-panel w3-ios-light-grey w3-margin">
+					<p><img src = "search.svg" alt="ДГТУ" width="20" height="20" style="margin-right: 10px;"/> Поиск по услугам...</p>
+				</div>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Социально-гуманитарные науки</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Строительство, архитектура</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>IT-Технологии</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Агро, биотехнологии, транспорт</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Авиа и машиностроение</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Дизайн</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review')"><b>Оценить</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Назад</b></button>
+				</div>
+			</div>
+			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
+				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+			</footer>
+			<footer class="e-container e-dark-grey e-center e-margin-top">
+		</div>
+		<!--review-->
+		<div id="Review" class="tab">
+			<div class="userspace w3-center" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-left" align=left>
+					<h1><b>Вы записаны!</b></h1>
+					Оцените, пожалуйста, качество нашего обслуживания. Это очень поможет нам в будущем!
+				</div>
+				<div class="w3-container w3-animate-left" align=left>
+					<h2><b>Оценка</b></h2>
+					На сколько мы вам помогли? <br>
+					<img src = "star.svg" alt="ДГТУ" width="20" height="20"> <img src = "star.svg" alt="ДГТУ" width="20" height="20"/> <img src = "star.svg" alt="ДГТУ" width="20" height="20"/> <img src = "star.svg" alt="ДГТУ" width="20" height="20"/> <img src = "star.svg" alt="ДГТУ" width="20" height="20"/>
+				</div>
+				<div class="w3-panel w3-ios-light-grey w3-margin">
+					<p style="padding-bottom: 25vh;" align=left>Напишите свои предложения (необязательно)</p>
+				</div>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='index.html';"><b>Отправить отзыв</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='index.html';"><b>Пропустить</b></button>
+				</div>
+			</div>
+			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
+				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+			</footer>
+			<footer class="e-container e-dark-grey e-center e-margin-top">
+		</div>
+		<script>
+			function openTab(tabName) {
+				var i;
+				var x = document.getElementsByClassName("tab");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				document.getElementById(tabName).style.display = "block";
+			}
+		</script>
 	</body>
 </html>
-<!--
-<div class="footer" align=center> P.S. Да, это ещё и часть моего веб-портфолио :3 </div>
-––>
