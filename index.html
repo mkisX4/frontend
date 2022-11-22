@@ -26,10 +26,11 @@
 					<h5>Выберите тип обращения, нажав на одну из кнопок ниже</h5>
 				</div>
 				<div class="w3-container w3-margin-top w3-margin-bottom">
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Хочу перевестись / восстановиться</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Мне надо подать документы </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start');"><b>Другое</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" vertical-align:bottom name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Хочу перевестись / восстановиться</637671></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Мне надо подать документы (МФЦ) </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Интересует консультация </b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('etc');"><b>Другое</b></button>
 				</div>
 			</div>
 			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
@@ -76,6 +77,29 @@
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Дизайн</b></button>
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review')"><b>Оценить</b></button>
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Назад</b></button>
+
+					<footer class="w3-container w3-center w3-dark-grey" style="height:15vh; position: relative; left:0; bottom:0; width: 100%; margin-top: 15px;">
+						<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
+					<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
+					</footer>
+					<footer class="e-container e-dark-grey e-center e-margin-top">
+				</div>
+			</div>
+
+		</div>
+		<!-- 	etc	 -->
+		<div id="etc" class="tab" style="display:none">
+			<div class="userspace" style="height:85vh; position: relative;">
+				<div class="w3-container w3-animate-left" align=left>
+					<h1><b>Другие услуги</b></h1>
+				</div>
+				<div class="w3-panel w3-ios-light-grey w3-margin">
+					<p><img src = "search.svg" alt="ДГТУ" width="20" height="20" style="margin-right: 10px;"/> Поиск по услугам...</p>
+				</div>
+				<div class="w3-container w3-margin-top w3-margin-bottom">
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Зелёный зал</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Секретарь</b></button>
+					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Назад</b></button>
 				</div>
 			</div>
 			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
@@ -83,6 +107,7 @@
 				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
 			</footer>
 			<footer class="e-container e-dark-grey e-center e-margin-top">
+
 		</div>
 		<!--review-->
 		<div id="Review" class="tab" style="display:none">
