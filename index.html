@@ -14,6 +14,13 @@
 			.w3-button-other{color:#5A87E9!important;background-color:#FFFFFF!important}
 			.w3-button-inactive{color:#1A1B1D!important;background-color:#E1E1E6!important}
 		</style>
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<!-- JavaScript -->
+		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<style>
+.carousel {   background: #EEE; }  .carousel-cell {   width: 66%;   height: 200px;   margin-right: 10px;   background: #8C8;   border-radius: 5px;   counter-increment: gallery-cell; }  /* cell number */ .carousel-cell:before {   display: block;   text-align: center;   content: counter(gallery-cell);   line-height: 200px;   font-size: 80px;   color: white; }
+		</style>
 	</head>
 	<body>
 		<!-- start	 -->
@@ -25,6 +32,14 @@
 				<div class="w3-container w3-button-inactive" align=left>
 					<h5>Выберите тип обращения, нажав на одну из кнопок ниже</h5>
 				</div>
+				<div class="carousel"
+  data-flickity='{ "freeScroll": true }'>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+  <div class="carousel-cell"></div>
+</div>
 				<div class="w3-container w3-margin-top w3-margin-bottom w3-display-bottommiddle" style="width: 100%;">
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
 					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Хочу перевестись / восстановиться</637671></button>
