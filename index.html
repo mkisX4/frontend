@@ -9,17 +9,17 @@
 			@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
 			.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-			.w3-ios-light-grey{color:#000!important;background-color:#ceced2!important}
+			.w3-ios-light-grey{color:#8B8B8B!important;background-color:#FFFFFF!important}
 			.w3-button-blue{color:#5A87E9!important;background-color:#E1E1E6!important}
 			.w3-button-other{color:#5A87E9!important;background-color:#FFFFFF!important}
 			.w3-button-inactive{color:#1A1B1D!important;background-color:#E1E1E6!important}
 		</style>
 		<!-- CSS -->
-		<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+		<link rel="stylesheet" href="flickity/flickity.min.css">
 		<!-- JavaScript -->
-		<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+		<script src="flickity/flickity.pkgd.min.js"></script>
 		<style>
-.carousel {   background: #EEE; }  .carousel-cell {   width: 66%;   height: 200px;   margin-right: 10px;   background: #8C8;   border-radius: 5px;   counter-increment: gallery-cell; }  /* cell number */ .carousel-cell:before {   display: block;   text-align: center;   content: counter(gallery-cell);   line-height: 200px;   font-size: 80px;   color: white; }
+			.carousel {   background: #FFFFFF; }  .carousel-cell {   width: 66%;   height: 200px;   margin-right: 10px;   background: #8C8;   border-radius: 5px;   counter-increment: gallery-cell; }  .carousel-cell:before {   display: block;   text-align: center;   content: counter(gallery-cell);   line-height: 100%;   font-size: 0px;   color: 5A87E9; }
 		</style>
 	</head>
 	<body>
@@ -29,23 +29,28 @@
 				<div class="w3-container w3-animate-left" align=left>
 					<h1><b><img src = "DSTU.svg" alt="ДГТУ" width="32" height="32" style="margin-right: 10px;"/>Приветстуем!</b><img src = "search.svg" alt="ДГТУ" width="32" height="32" style="margin-left: 100px; align: right"/></h1>
 				</div>
-				<div class="w3-container w3-button-inactive" align=left>
+				<div class="w3-container w3-ios-light-grey" align=left>
 					<h5>Выберите тип обращения, нажав на одну из кнопок ниже</h5>
 				</div>
-				<div class="carousel"
-  data-flickity='{ "freeScroll": true }'>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-  <div class="carousel-cell"></div>
-</div>
 				<div class="w3-container w3-margin-top w3-margin-bottom w3-display-bottommiddle" style="width: 100%;">
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor')"><b>Хочу поступить </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Хочу перевестись / восстановиться</637671></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Мне надо подать документы (МФЦ) </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review');"><b>Интересует консультация </b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('etc');"><b>Другое</b></button>
+				Бакалавриат
+				<div class="carousel" data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'>
+  					<div class="carousel-cell w3-button-blue" onclick="openTab('Bachelor')" style="width: 150px; height: 72px;"><img class="search-icon" src="feather.svg" alt="Перо" width="24" height="24"><br>Бакалавриат</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="feather.svg" alt="Перо" width="24" height="24"><br>Магистратура</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="feather.svg" alt="Перо" width="24" height="24"><br>СПО</div>
+				</div>
+				Перевод и восстановление
+				<div class="carousel" data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="shuffle.svg" alt="Стрелки" width="24" height="24"><br>Перевод и восстановление</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="paperclip.svg" alt="Скрепы" width="24" height="24"><br>МФЦ</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="shuffle.svg" alt="Стрелки" width="24" height="24"><br>СПУ</div>
+				</div>
+				Другие услуги
+				<div class="carousel" data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="user.svg" alt="Человек" width="24" height="24"><br>Консультация</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="grid.svg" alt="КБ" width="24" height="24"><br>Зелёный зал</div>
+  					<div class="carousel-cell w3-button-blue" onclick="location.href='queue.html';" style="width: 150px; height: 72px;"><img class="search-icon" src="monitor.svg" alt="Монитор" width="24" height="24"><br>ПИШ</div>
+				</div>
 				</div>
 			</div>
 			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
@@ -56,26 +61,6 @@
 		</div>
 		<!-- 	bachelor	 -->
 		<div id="Bachelor" class="tab" style="display:none">
-			<div class="userspace" style="height:85vh; position: relative;">
-				<div class="w3-container w3-animate-left" align=left>
-					<h1><b>Поступление</b></h1>
-				</div>
-				<div class="w3-container w3-margin-top w3-margin-bottom w3-display-bottommiddle" style="width: 100%;">
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Bachelor2')"><b>Хочу поступить на бакалавриат</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить на магистратуру</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="location.href='queue.html';"><b>Хочу поступить в колледж</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Review')"><b>Оценить</b></button>
-					<button class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block" name="button" onclick="openTab('Start')"><b>Назад</b></button>
-				</div>
-			</div>
-			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
-				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
-				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
-			</footer>
-			<footer class="e-container e-dark-grey e-center e-margin-top">
-		</div>
-		<!-- 	bachelor2	 -->
-		<div id="Bachelor2" class="tab" style="display:none">
 			<div class="userspace" style="height:85vh; position: relative;">
 				<div class="w3-container w3-animate-left">
 					<h1><b>Бакалавриат</b></h1>
