@@ -38,14 +38,14 @@
           <button
             class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
             name="button"
-            onclick="location.href='index.html';"
+            onclick="location.href='ui.html';"
           >
             <b>Отменить запись</b>
           </button>
           <button
             class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
             name="button"
-            onclick="location.href='index.html';"
+            onclick="openTab('Review');"
           >
             <b>Оценить</b>
           </button>
@@ -61,6 +61,46 @@
 			  С собой иметь: <b id="docs"> </b></p>
 			</h1>
 			</div>-->
+    <!--review-->
+    <div id="Review" class="tab" style="display: none">
+      <div class="userspace w3-center" style="height: 100vh; position: relative">
+        <div class="w3-container w3-animate-left" align="left">
+          <h1><b>Вы записаны!</b></h1>
+          Оцените, пожалуйста, качество нашего обслуживания. Это очень поможет
+          нам в будущем!
+        </div>
+        <div class="w3-container w3-animate-left" align="left">
+          <h2><b>Оценка</b></h2>
+          На сколько мы вам помогли? <br />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+        </div>
+        <div class="w3-panel w3-ios-light-grey w3-margin">
+          <p style="padding-bottom: 25vh" align="left">
+            Напишите свои предложения (необязательно)
+          </p>
+        </div>
+        <div class="w3-container w3-margin-top w3-margin-bottom">
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ui.html';"
+          >
+            <b>Отправить отзыв</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ui.html';"
+          >
+            <b>Пропустить</b>
+          </button>
+        </div>
+      </div>
+    </div>
     <script src="../js/ticket_fetcher.js"></script>
   </body>
 </html>
