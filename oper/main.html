@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>СУО ДГТУ: Панель оператора</title>
-		<link rel="stylesheet" type="text/css" href="css/w3pro.css">
+		<link rel="stylesheet" type="text/css" href="../css/w3pro.css">
 		<style>
 			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#f1f1f1!important}
@@ -68,7 +68,7 @@
 		</script>
 
 		<script>
-			fetch("ticket.json")
+			fetch("../ticket.json")
 			    .then(response => response.json())
 			    .then(data => {
 			        for (var i = 0; i<data.items.length; i++){

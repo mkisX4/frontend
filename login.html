@@ -8,23 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/additionals.css"/>
   </head>
   <body>
-    <!--achtunger-->
-    <div id="proto" class="w3-modal">
-      <div class="w3-modal-content">
-        <header class="w3-container w3-teal">
-          <span onclick="document.getElementById('proto').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-          <h1><b>Achtung! Внимание!</b></h1>
-        </header>
-        <div class="w3-container">
-          <p>Это прототип.</p>
-          <p>Его функционал ограничен.</p>
-          <p>Спасибо за понимание 😸</p>
-        </div>
-      </div>
-    </div>
-    <script>
-      document.getElementById("proto").style.display = "block";
-    </script>
     <!-- start	 -->
     <div id="Start" class="tab">
       <div
@@ -36,13 +19,13 @@
           <h1><b>Добрый день!</b></h1>
         </div>
         <div style="max-width: 600px" align="center">
-          <form class="w3-container" action="/action_page.php" align="center">
+          <form class="w3-container" align="center">
             <div class="w3-section" align="center">
               <label><b>Логин</b></label>
               <input
                 class="w3-input w3-border w3-margin-bottom"
                 type="text"
-                placeholder="админ"
+                placeholder="Иванов Иван Иванович"
                 name="usrname"
                 required
               />
@@ -55,7 +38,7 @@
                 required
               />
               <a
-                href="oper.html"
+                href="oper/main.html"
                 class="w3-button w3-hover-button-blue w3-block w3-button-blue w3-section w3-padding"
                 onclick="window.open(this.href,'targetWindow','toolbar=0,location=0,status=0,menubar=0o,scrollbars=0,resizable=0,width=570,height=735'); return false;"
                 ><b>Войти</b></a

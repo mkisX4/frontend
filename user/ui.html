@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СУО ДГТУ: Интерфейс пользователя</title>
+    <link rel="stylesheet" type="text/css" href="../css/w3pro.css" />
+    <link rel="stylesheet" type="text/css" href="../css/additionals.css"/>
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="../flickity/flickity.min.css" />
+    <!-- Flickity JavaScript -->
+    <script src="../flickity/flickity.pkgd.min.js"></script>
+    <style>
+      .carousel {
+        background: #ffffff;
+      }
+      .carousel-cell {
+        width: 66%;
+        height: 200px;
+        margin-right: 10px;
+        background: #8c8;
+        border-radius: 5px;
+        counter-increment: gallery-cell;
+      }
+      .carousel-cell:before {
+        display: block;
+        text-align: center;
+        content: counter(gallery-cell);
+        line-height: 100%;
+        font-size: 0px;
+        color: 5A87E9;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- start	 -->
+    <div id="Start" class="tab">
+      <div class="userspace" style="height: 100vh; position: relative">
+        <div class="w3-container w3-animate-left" align="left">
+          <h1>
+            <b
+              ><img
+                src="../img/icons/dstu.svg"
+                alt="ДГТУ"
+                width="32"
+                height="32"
+                style="margin-right: 10px"
+              />Приветстуем!</b
+            ><img
+              src="../img/icons/search.svg"
+              alt="ДГТУ"
+              width="32"
+              height="32"
+              style="margin-left: 100px; align: right"
+            />
+          </h1>
+        </div>
+        <div class="w3-container w3-ios-light-grey" align="left">
+          <h5>Выберите тип обращения, нажав на одну из кнопок ниже</h5>
+        </div>
+        <div
+          class="w3-container w3-margin-top w3-margin-bottom w3-display-bottommiddle"
+          style="width: 100%"
+        >
+          Бакалавриат
+          <div
+            class="carousel"
+            data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'
+          >
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="openTab('Bachelor')"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/feather.svg"
+                alt="Перо"
+                width="24"
+                height="24"
+              /><br />Бакалавриат
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/feather.svg"
+                alt="Перо"
+                width="24"
+                height="24"
+              /><br />Магистратура
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/feather.svg"
+                alt="Перо"
+                width="24"
+                height="24"
+              /><br />СПО
+            </div>
+          </div>
+          Перевод и восстановление
+          <div
+            class="carousel"
+            data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'
+          >
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/shuffle.svg"
+                alt="Стрелки"
+                width="24"
+                height="24"
+              /><br />Перевод и восстановление
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/paperclip.svg"
+                alt="Скрепы"
+                width="24"
+                height="24"
+              /><br />МФЦ
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/shuffle.svg"
+                alt="Стрелки"
+                width="24"
+                height="24"
+              /><br />СПУ
+            </div>
+          </div>
+          Другие услуги
+          <div
+            class="carousel"
+            data-flickity='{ "freeScroll": true, "pageDots": false, "prevNextButtons": false, "contain": true, "cellAlign": "left"}'
+          >
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/user.svg"
+                alt="Человек"
+                width="24"
+                height="24"
+              /><br />Консультация
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/grid.svg"
+                alt="КБ"
+                width="24"
+                height="24"
+              /><br />Зелёный зал
+            </div>
+            <div
+              class="carousel-cell w3-button-grey-blue"
+              onclick="location.href='ticket.html';"
+              style="width: 150px; height: 72px"
+            >
+              <img
+                class="search-icon"
+                src="../img/icons/monitor.svg"
+                alt="Монитор"
+                width="24"
+                height="24"
+              /><br />ПИШ
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 	bachelor	 -->
+    <div id="Bachelor" class="tab" style="display: none">
+      <div class="userspace" style="height: 100vh; position: relative">
+        <div class="w3-container w3-animate-left">
+          <h1><b>Бакалавриат</b></h1>
+        </div>
+        <div class="w3-panel w3-ios-light-grey w3-margin">
+          <p>
+            <img
+              src="../img/icons/search.svg"
+              alt="ДГТУ"
+              width="20"
+              height="20"
+              style="margin-right: 10px"
+            />
+            Поиск по услугам...
+          </p>
+        </div>
+        <div class="w3-container w3-margin-top w3-margin-bottom">
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Социально-гуманитарные науки</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Строительство, архитектура</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>IT-Технологии</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Агро, биотехнологии, транспорт</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Авиа и машиностроение</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Дизайн</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="openTab('Review')"
+          >
+            <b>Оценить</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="openTab('Start')"
+          >
+            <b>Назад</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- 	etc	 -->
+    <div id="etc" class="tab" style="display: none">
+      <div class="userspace" style="height: 100vh; position: relative">
+        <div class="w3-container w3-animate-left" align="left">
+          <h1><b>Другие услуги</b></h1>
+        </div>
+        <div class="w3-panel w3-ios-light-grey w3-margin">
+          <p>
+            <img
+              src="../img/icons/search.svg"
+              alt="ДГТУ"
+              width="20"
+              height="20"
+              style="margin-right: 10px"
+            />
+            Поиск по услугам...
+          </p>
+        </div>
+        <div
+          class="w3-container w3-margin-top w3-margin-bottom w3-display-bottommiddle"
+          style="width: 100%"
+        >
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Зелёный зал</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='ticket.html';"
+          >
+            <b>Секретарь</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="openTab('Start')"
+          >
+            <b>Назад</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!--review-->
+    <div id="Review" class="tab" style="display: none">
+      <div class="userspace w3-center" style="height: 100vh; position: relative">
+        <div class="w3-container w3-animate-left" align="left">
+          <h1><b>Вы записаны!</b></h1>
+          Оцените, пожалуйста, качество нашего обслуживания. Это очень поможет
+          нам в будущем!
+        </div>
+        <div class="w3-container w3-animate-left" align="left">
+          <h2><b>Оценка</b></h2>
+          На сколько мы вам помогли? <br />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+          <img src="../img/icons/star.svg" alt="ДГТУ" width="20" height="20" />
+        </div>
+        <div class="w3-panel w3-ios-light-grey w3-margin">
+          <p style="padding-bottom: 25vh" align="left">
+            Напишите свои предложения (необязательно)
+          </p>
+        </div>
+        <div class="w3-container w3-margin-top w3-margin-bottom">
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='index.html';"
+          >
+            <b>Отправить отзыв</b>
+          </button>
+          <button
+            class="w3-button w3-padding-16 w3-ios-light-grey w3-margin-top w3-block"
+            name="button"
+            onclick="location.href='index.html';"
+          >
+            <b>Пропустить</b>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/tab_opener.js"></script>
+  </body>
+</html>
