@@ -1,59 +1,81 @@
 <!DOCTYPE html>
 <html lang="">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>СУО ДГТУ: Логин к панели оператора</title>
-		<link rel="stylesheet" type="text/css" href="style-index.css">
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-			.w3-light-grey,.w3-hover-light-grey:hover,.w3-light-gray,.w3-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
-			.w3-dark-grey,.w3-hover-dark-grey:hover,.w3-dark-gray,.w3-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
-			.w3-ios-light-grey{color:#000!important;background-color:#ceced2!important}
-			.w3-button-search{background-color:#E1E1E6!important}
-			.w3-button-blue,.w3-hover-button-blue:hover{color:#FFFFFF!important;background-color:#5A87E9!important}
-			.w3-button-other{color:#5A87E9!important;background-color:#FFFFFF!important}
-		</style>
-	</head>
-	<body>
-		<!-- start	 -->
-		<div id="Start" class="tab">
-			<div class="userspace" style="height:85vh; position: relative;" align=center>
-				<div class="w3-container" align=center>
-					<h1><b>Добрый день!</b></h1>
-				</div>
-	<div style="max-width:600px" align=center>
-      <form class="w3-container" action="/action_page.php" align=center>
-        <div class="w3-section" align=center>
-          <label><b>Логин</b></label>
-          <input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="админ" name="usrname" required>
-          <label><b>Пароль</b></label>
-          <input class="w3-input w3-border" type="password" placeholder="*****" name="psw" required>
-          <a href="oper.html" class="w3-button w3-hover-button-blue w3-block w3-button-blue w3-section w3-padding" onclick="window.open(this.href,'targetWindow','toolbar=0,location=0,status=0,menubar=0o,scrollbars=0,resizable=0,width=570,height=735'); return false;"><b>Войти</b></a>
-          <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Запомнить меня
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>СУО ДГТУ: Логин к панели оператора</title>
+    <link rel="stylesheet" type="text/css" href="css/w3pro.css" />
+    <link rel="stylesheet" type="text/css" href="css/additionals.css"/>
+  </head>
+  <body>
+    <!--achtunger-->
+    <div id="proto" class="w3-modal">
+      <div class="w3-modal-content">
+        <header class="w3-container w3-teal">
+          <span onclick="document.getElementById('proto').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <h1><b>Achtung! Внимание!</b></h1>
+        </header>
+        <div class="w3-container">
+          <p>Это прототип.</p>
+          <p>Его функционал ограничен.</p>
+          <p>Спасибо за понимание 😸</p>
         </div>
-      </form>
-
-      <div class="w3-container w3-border-top w3-padding-16">
-        <span class="w3-right w3-padding w3-hide-small">Забыли <a href="https://edu.donstu.ru">пароль?</a></span>
       </div>
-			</div>
-			</div>
-			<footer class="w3-container w3-center w3-dark-grey" style="height:15vh;">
-				<img src = "dstu.svg" alt="ДГТУ" width="40" height="40" class="w3-margin-top"/></p>
-				<p><b>ПРОТОТИП. ФУНКЦИОНАЛ ОГРАНИЧЕН!</b></p>
-			</footer>
-			<footer class="e-container e-dark-grey e-center e-margin-top">
-		</div>
-		<script>
-			function openTab(tabName) {
-				var i;
-				var x = document.getElementsByClassName("tab");
-				for (i = 0; i < x.length; i++) {
-					x[i].style.display = "none";
-				}
-				document.getElementById(tabName).style.display = "block";
-			}
-		</script>
-	</body>
+    </div>
+    <script>
+      document.getElementById("proto").style.display = "block";
+    </script>
+    <!-- start	 -->
+    <div id="Start" class="tab">
+      <div
+        class="userspace"
+        style="height: 100vh; position: relative"
+        align="center"
+      >
+        <div class="w3-container" align="center">
+          <h1><b>Добрый день!</b></h1>
+        </div>
+        <div style="max-width: 600px" align="center">
+          <form class="w3-container" action="/action_page.php" align="center">
+            <div class="w3-section" align="center">
+              <label><b>Логин</b></label>
+              <input
+                class="w3-input w3-border w3-margin-bottom"
+                type="text"
+                placeholder="админ"
+                name="usrname"
+                required
+              />
+              <label><b>Пароль</b></label>
+              <input
+                class="w3-input w3-border"
+                type="password"
+                placeholder="*****"
+                name="psw"
+                required
+              />
+              <a
+                href="oper.html"
+                class="w3-button w3-hover-button-blue w3-block w3-button-blue w3-section w3-padding"
+                onclick="window.open(this.href,'targetWindow','toolbar=0,location=0,status=0,menubar=0o,scrollbars=0,resizable=0,width=570,height=735'); return false;"
+                ><b>Войти</b></a
+              >
+              <input
+                class="w3-check w3-margin-top"
+                type="checkbox"
+                checked="checked"
+              />
+              Запомнить меня
+            </div>
+          </form>
+
+          <div class="w3-container w3-border-top w3-padding-16">
+            <span class="w3-right w3-padding w3-hide-small"
+              >Забыли <a href="https://edu.donstu.ru">пароль?</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
