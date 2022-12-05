@@ -13,7 +13,8 @@
   color: #fff !important;
   background-color: #616161 !important;
 }
-.w3-ios-light-grey {
+.w3-ios-light-grey,
+.w3-hover-light-grey:hover {
   color: #8b8b8b !important;
   background-color: #ffffff !important;
 }
