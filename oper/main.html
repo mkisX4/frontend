@@ -19,7 +19,7 @@
 		</style>
 	</head>
 	<body>
-		<div id="Operator">
+		<div id="Operator" class="tab" style="display: block">
 			<div class="w3-container w3-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
 				<h1><b>Работа с клиентом</b></h1>
 				<h2><b>Номер талона:</b></h2>
@@ -30,10 +30,27 @@
 				<span class="left w3-dark-grey">Количество ожидающих:</span><span class="right"><b>10</b></span>​
 				<button class="w3-button w3-round w3-padding-8 w3-button-blue w3-ripple w3-margin-top w3-block w3-round-large" id="stoptimer" onclick="clearInterval(function)"><b>Закончить сеанс</b></button>
 				<div class="w3-bar w3-margin-top">
-					<button class="w3-bar-item w3-round w3-padding-8 w3-ios-light-grey w3-block w3-round-large w3-left" style="width:48%">Перенаправить клиента</button>
-					<button class="w3-bar-item w3-round w3-padding-8 w3-ios-light-grey w3-block w3-round-large w3-right" style="width:48%">Вызвать по номеру</button>
+					<button class="w3-bar-item w3-button w3-padding-8 w3-button-grey-blue w3-block w3-round-large w3-left" style="width:48%">Перенаправить клиента</button>
+					<button class="w3-bar-item w3-button w3-padding-8 w3-button-grey-blue w3-block w3-round-large w3-right" style="width:48%">Вызвать по номеру</button>
 				</div>
-				<button class="w3-button w3-round w3-padding-8 w3-button-other w3-ripple w3-margin-top w3-block w3-round-large" name="button" onclick="location.href='index_draft.html';">Выйти на перерыв</button>
+				<button class="w3-button w3-round w3-padding-8 w3-button-other w3-ripple w3-margin-top w3-block w3-round-large" name="button" onclick="openTab('OperatorRests')">Выйти на перерыв</button>
+			</div>
+		</div>
+		<div id="OperatorRests" class="tab" style="display: none">
+			<div class="w3-container w3-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
+				<h1><b>Работа с клиентом</b></h1>
+				<h2><b>Номер талона:</b></h2>
+				<div class="w3-display-container w3-panel w3-ticket w3-round-xlarge" style="">
+					<div class="w3-display-middle"><h1><b id="number"></b></h1></div>
+				</div>
+				<span class="left w3-dark-grey">Следующий в очереди:</span><span class="right"><b>A-02</b></span>​<br>
+				<span class="left w3-dark-grey">Количество ожидающих:</span><span class="right"><b>10</b></span>​
+				<button class="w3-button w3-round w3-padding-8 w3-button-blue w3-ripple w3-margin-top w3-block w3-round-large" onclick="openTab('Operator')"><b>Вернуться к работе</b></button>
+				<div class="w3-bar w3-margin-top">
+					<button class="w3-bar-item w3-round w3-disabled w3-padding-8 w3-button-grey-blue w3-block w3-round-large w3-left" style="width:48%">-</button>
+					<button class="w3-bar-item w3-round w3-disabled w3-padding-8 w3-button-grey-blue w3-block w3-round-large w3-right" style="width:48%">-</button>
+				</div>
+				<button class="w3-button w3-round w3-padding-8 w3-button-other w3-margin-top w3-block w3-round-large w3-disabled" name="button">-</button>
 			</div>
 		</div>
 		<div id="Statistics">
@@ -41,7 +58,8 @@
 				<h1><b>Статистика</b></h1>
 				<span class="left w3-dark-grey">Дата:</span><span class="right"><b id="date">12.12.2022</b></span>​<br>
 				<span class="left w3-dark-grey">Время:</span><span class="right"><b id="time">12:20:00</b></span>​<br>
-				<span class="left w3-dark-grey">Этот сеанс длится:</span><span class="right"><b><span id="minutes">00</span>:<span id="seconds">00</span></b></span>​<br>
+				<span class="left w3-dark-grey w3-margin-bottom-16">Этот сеанс длится:</span><span class="right"><b><span id="minutes">00</span>:<span id="seconds">00</span></b></span>​<br>
+				<div class="w3-container w3-margin-bottom-16"></div>
 				<span class="left w3-dark-grey">Талонов за день:</span><span class="right"><b>23</b></span>​<br>
 				<span class="left w3-dark-grey">Среднее время обслуживания:</span><span class="right"><b>4:20</b></span>​<br>
 				<span class="left w3-dark-grey">Нормативное время обслуживания:</span><span class="right"><b>5:00</b></span>​
@@ -77,5 +95,6 @@
 			        }
 			    })
 		</script>
+		 <script src="../js/tab_opener.js"></script>
 	</body>
 </html>
