@@ -1,41 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
-.w3-light-grey,
-.w3-hover-light-grey:hover,
-.w3-light-gray,
-.w3-hover-light-gray:hover {
+.a-light-grey,
+.a-hover-light-grey:hover{
   color: #000 !important;
   background-color: #F1F1F7 !important;
 }
 .text-dark-grey {
   color: #83838D !important;
 }
-.w3-button-grey-blue-hover:hover {
+.a-button-grey-blue-hover:hover {
   color: #5a87e9 !important;
   background-color: #fafafa !important;
 }
-.w3-button-grey-blue {
+.a-button-grey-blue {
   color: #5a87e9 !important;
   background-color: #f1f1f7 !important;
 }
-.w3-button-blue {
+.a-button-blue {
   color: #ffffff !important;
   background-color: #5a87e9 !important;
 }
-.w3-button-blue-hover:hover {
+.a-button-blue-hover:hover {
   color: #ffffff !important;
   background-color: #5a87e9 !important;
 }
-.w3-margin-8 {
+.a-margin-8 {
   margin: 8px !important;
 }
-.w3-margin-bottom-8 {
+.a-margin-bottom-8 {
   margin-bottom: 8px !important;
 }
-.w3-margin-16 {
+.a-margin-16 {
   margin: 16px !important;
 }
-.w3-margin-64 {
-  margin: 64px !important;
+.a-margin-48 {
+  margin: 48px !important;
 }
 @media (max-width: 767px) {
   .hidden-mobile {
