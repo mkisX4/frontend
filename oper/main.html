@@ -6,23 +6,17 @@
 		<title>СУО ДГТУ: Панель оператора</title>
 		<link rel="stylesheet" type="text/css" href="../css/w3pro.css">
 		<link rel="stylesheet" type="text/css" href="../css/additionals.css" />
-		<style>
-			.w3-ticket{color:#000000!important;width: 522px; height: 90px;  background: #D3DFF8; border-radius: 10px;}
-			.right{float:right;}
-			.left{float:left;}
-			.w3-padding-24{padding-top:24px!important;padding-bottom:24px!important;padding-left:24px!important;padding-right:24px!important}
-		</style>
 	</head>
 	<body>
 		<div id="Operator" class="tab" style="display: block">
-			<div class="w3-container w3-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
-				<h1><b>Работа с клиентом</b></h1>
-				<h2><b>Номер талона:</b></h2>
-				<div class="w3-display-container w3-panel w3-ticket w3-round-xlarge" style="">
+			<div class="w3-container a-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
+				<h1 class="text-blackish"><b>Работа с клиентом</b></h1>
+				<h2 class="text-blackish"><b>Номер талона:</b></h2>
+				<div class="w3-display-container w3-panel a-ticket w3-round-xlarge" style="">
 					<div class="w3-display-middle"><h1><b id="number">А-001</b></h1></div>
 				</div>
 				<span class="left w3-dark-grey">Следующий в очереди:</span><span class="right"><b>A-002</b></span>​<br>
-				<span class="left w3-dark-grey a-margin-bottom-8">Количество ожидающих:</span><span class="right"><b>10</b></span>​
+				<span class="left w3-dark-grey a-margin-bottom-8">Количество ожидающих:</span><span class="right"><b>1</b></span>​
 				<button class="w3-button w3-round w3-padding-8 a-button-blue a-button-blue-hover a-margin-bottom-8 w3-block w3-round-large" id="stoptimer" onclick="clearInterval(function)">Закончить сеанс</button>
 				<div class="w3-bar a-margin-bottom-8">
 					<button class="w3-bar-item w3-button w3-padding-8 a-button-grey-blue a-button-grey-blue-hover w3-block w3-round-large w3-left" style="width:48%">Перенаправить клиента</button>
@@ -33,14 +27,14 @@
 			</div>
 		</div>
 		<div id="OperatorRests" class="tab" style="display: none">
-			<div class="w3-container w3-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
+			<div class="w3-container a-padding-24" style="max-height:460px;max-width:570px;height:460px;width:570px;position:static;">
 				<h1><b>Работа с клиентом</b></h1>
 				<h2><b>Номер талона:</b></h2>
-				<div class="w3-display-container w3-panel w3-ticket w3-round-xlarge" style="">
+				<div class="w3-display-container w3-panel a-ticket w3-round-xlarge" style="">
 					<div class="w3-display-middle"><h1><b id="number"></b></h1></div>
 				</div>
-				<span class="left w3-dark-grey">Следующий в очереди:</span><span class="right"><b>A-02</b></span>​<br>
-				<span class="left w3-dark-grey">Количество ожидающих:</span><span class="right"><b>10</b></span>​
+				<span class="left w3-dark-grey">Следующий в очереди:</span><span class="right"><b>A-002</b></span>​<br>
+				<span class="left w3-dark-grey">Количество ожидающих:</span><span class="right"><b>1</b></span>​
 				<button class="w3-button w3-round w3-padding-8 a-button-grey-blue a-button-grey-blue-hover a-margin-bottom-8 w3-block w3-round-large w3-disabled" name="button">-</button>
 				<div class="w3-bar a-margin-bottom-8">
 					<button class="w3-bar-item w3-round w3-disabled a-button-grey-blue a-button-grey-blue-hover w3-block w3-round-large w3-left" style="width:48%">-</button>
