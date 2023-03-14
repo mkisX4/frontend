@@ -5,7 +5,7 @@
 	background-color:#0079b2; /* #C8CFD9; dce2e8;*/
     height: 40px;
     line-height: 40px;
-    margin-left: 285px;
+    margin-left: 0px;
     margin-top: 50px;
     text-align: center;
 }
@@ -202,7 +202,7 @@ ul.top_menu_ul {
 	background-color: #C8CFD9;
     height: 40px;
     line-height: 40px;
-    margin-left: 285px;
+    margin-left: 200px;
     text-align: center;
 }
 
@@ -409,7 +409,7 @@ ul.top_menu_ul li {
 	background-color: #F6D63D;
 	height: 40px;
 	line-height: 40px;
-	margin-left: 285px;
+	margin-left: 200px;
 	text-align: center;
 	/*margin-top: 50px;*/
 }
