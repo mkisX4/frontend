@@ -1,0 +1,259 @@
+
+
+/* Start:/local/components/dstu/events.index/templates/main/style.css?16069350051520*/
+.messages.banner_orange.square.m_hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f6d63d !important;
+	background-image: url("/local/templates/new_menu/img/4.jpg") !important;
+	background-repeat: repeat;
+	height: 100% !important;
+	cursor: pointer;
+}
+
+.index-page .banner .main-slider .shot .bg-transparent .date {
+	width: 62% !important;
+}
+
+.messages.banner_orange.square.m_hover:hover {
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 204px inset;
+}
+
+.index-page .banner .main-slider {
+	height: 100%
+}
+
+.index-page .banner .main-slider .swiper-container {
+	height: 100%
+}
+
+.messages.banner_orange.square.m_hover span {
+    display: block;
+    position: relative;
+    text-align: center;
+    font: 3em "Open Sans Extra", sans-serif;
+    color: #fff;
+    line-height: normal;
+}
+ 
+@media (max-width : 1680px) {
+	.messages.banner_orange.square.m_hover span {
+		font-size: 2em;
+	}
+}
+@media (max-width : 1200px) {
+	.messages.banner_orange.square.m_hover span {
+		font-size: 1.5em;
+	}
+}
+
+@media (max-width : 670px) {
+	.main .index-page .banner {
+		max-height: none;
+		height: auto !important;
+
+	}
+	.messages.banner_orange.square.m_hover {
+		position: static;
+		width: 100%;
+	}
+	.index-page .banner .messages {
+		min-height: 250px !important;
+	}
+}
+
+@media (max-width : 480px) {
+	.index-page .banner .messages {
+		min-height: 200px !important;
+	}
+}
+
+.index-page .banner .messages {
+	background-image: none !important;
+}
+/* End */
+
+
+/* Start:/local/components/dstu/services.index/templates/main/style.css?16069350053617*/
+.index-page .services {	 
+    position: relative;
+	background: #e13746;
+	max-height: 115px;
+}
+
+.index-page .services .plate {
+    background: #202931 none repeat scroll 0 0;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+	width: 33.33%;
+    max-height: 115px;
+}
+
+.index-page .services .square {
+    max-height: 115px;
+}
+
+
+.index-page .services .plate .title {
+    font: 18px "Open Sans Bold",sans-serif;
+    letter-spacing: 1px;
+    padding: 15px 30px 10px;
+    text-transform: uppercase;
+}
+
+.index-page .services .plate .text {
+    font: 12px/18px "Open Sans",sans-serif;
+    opacity: 0.7;
+    padding: 0 30px;
+}
+
+.index-page .services .plate .nav-partners {
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.index-page .services .plate .nav-partners a.left {
+    background: rgba(0, 0, 0, 0) url("/local/templates/new_menu/img/left.png") repeat scroll 0 0;
+    border-right: 1px solid #f8de64;
+}
+.index-page .services .plate .nav-partners a.right {
+    background: rgba(0, 0, 0, 0) url("/local/templates/new_menu/img/right.png") repeat scroll 0 0;
+}
+.index-page .services .plate .nav-partners a {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+}
+
+.index-page .services .partner {
+    background: url(/local/templates/new_menu/partner-border.png) repeat-y;	
+    position: relative;
+    -webkit-transition: opacity 0.2s ease-out 0s;
+    -moz-transition: opacity 0.2s ease-out 0s;
+    -o-transition: opacity 0.2s ease-out 0s;
+    transition: opacity 0.2s ease-out 0s;
+	display: table;
+	text-align: center;
+}
+
+.index-page .services .partner:nth-child(2n+1) {
+    background: #f24151 none repeat scroll 0 0;
+}
+.index-page .services .partner:nth-child(2n) {
+    background: #e13746 none repeat scroll 0 0;
+}
+
+.index-page .services .partner .cntr {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.index-page .services .partner .service-name {
+    width: 200px;
+	max-height: 115px;
+	vertical-align: middle; 
+	text-transform: uppercase;	
+	color: white;
+	padding: 20px;
+	display: table-cell;
+	text-align: center;
+	font: 13px "Open Sans Extra",sans-serif;
+	transition: all 0.2s ease-out 0s;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.index-page .services .plate .title {font: 13px "Open Sans Bold",sans-serif;}
+	.index-page .services .partner .service-name {font-size: 11px;}	
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1240px)  {
+	.index-page .services .plate .title {font: 15px "Open Sans Bold",sans-serif;}
+	.index-page .services .partner .service-name {font-size: 13px;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	.index-page .services .plate .title {font: 14px "Open Sans Bold",sans-serif;}
+	.index-page .services .partner .service-name {font-size: 12px;}
+}
+
+/*.index-page .services .partner .service-name:hover {
+	color: #e13746;	
+}*/
+
+@media only screen and (min-device-width : 480px) {
+    .messages.square.mobile.m_hover {
+        display: none;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .messages.square.mobile.m_hover {
+        display: block;
+        width: 100%;
+        background: url("/local/templates/new_menu/img/comission.png") 50% 50% #ff8906 !important;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important; 
+    }
+}
+/* End */
+
+
+/* Start:/local/templates/new_menu/components/bitrix/news.list/videos_main/style.css?1612518774286*/
+.video_btn{
+	border-bottom: 3px solid #0079B2;
+	display: inline-block;
+	font: 12px/38px "Open Sans Extra",sans-serif;
+	color: #202931;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.video_btn:hover{
+	border-bottom: 3px solid #f6d63d;
+}
+.container{
+	margin-top:20px;
+}
+/* End */
+
+
+/* Start:/local/components/dstu/block.link.index/templates/main/style.css?1606935005491*/
+.index-page .useful_links {
+	position: relative;
+}
+
+.index-page .useful_links .swype {
+    background: rgba(0, 0, 0, 0) url("/local/templates/new_menu/img/swype.png") repeat scroll 0 0;
+    bottom: 0;
+    height: 50px;
+    left: 0;
+    position: absolute;
+    width: 50px;
+    z-index: 2;
+}
+
+.useful_links .swiper-wrapper {
+	max-height: 300px;
+}
+
+.index-page .useful_links .banner {
+	max-height: 100%;
+	/*margin: 2% 0px;*/
+    max-width: 100%;
+    line-height: 100%;
+}
+/* End */
+/* /local/components/dstu/events.index/templates/main/style.css?16069350051520 */
+/* /local/components/dstu/services.index/templates/main/style.css?16069350053617 */
+/* /local/templates/new_menu/components/bitrix/news.list/videos_main/style.css?1612518774286 */
+/* /local/components/dstu/block.link.index/templates/main/style.css?1606935005491 */
